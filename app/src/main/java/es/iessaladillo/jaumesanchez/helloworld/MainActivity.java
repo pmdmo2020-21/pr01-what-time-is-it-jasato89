@@ -22,10 +22,9 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat h = new SimpleDateFormat("HH:mm:ss");
         SimpleDateFormat d = new SimpleDateFormat("dd/MM/YYYY");
 
-        now.getTime();
         String hour = h.format(now);
         String day = d.format(now);
-        String getToday = "Date:\n" + day +"\nHour:\n" + hour;
+        String getToday =String.format("Date:\n %s\nHour:\n %s", day, hour);
 
 
         TextView helloText = findViewById(R.id.helloText);
